@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{054096EE-63C1-4CA8-8DCF-FE5CA986FFC0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoinbaseSharp</RootNamespace>
+    <AssemblyName>CoinbaseSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\API.cs" />
+    <Compile Include="Authentication\APIKey.cs" />
+    <Compile Include="DataTypes\Fees.cs" />
+    <Compile Include="DataTypes\MoneyTransaction.cs" />
+    <Compile Include="DataTypes\Requests\RequestMoneyTransactionRequest.cs" />
+    <Compile Include="DataTypes\Requests\SendMoneyTransactionRequest.cs" />
+    <Compile Include="DataTypes\Quantity.cs" />
+    <Compile Include="DataTypes\RequestMoneyTransaction.cs" />
+    <Compile Include="DataTypes\Responses\UserResponse.cs" />
+    <Compile Include="DataTypes\SendMoneyTransaction.cs" />
+    <Compile Include="DataTypes\Responses\CoinbaseResponse.cs" />
+    <Compile Include="DataTypes\Price.cs" />
+    <Compile Include="DataTypes\Responses\ButtonResponse.cs" />
+    <Compile Include="DataTypes\Responses\OrderResponse.cs" />
+    <Compile Include="DataTypes\Responses\TransactionResponse.cs" />
+    <Compile Include="DataTypes\Responses\TransferResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Amount.cs" />
+    <Compile Include="Resources\Button.cs" />
+    <Compile Include="Resources\CoinbaseResource.cs" />
+    <Compile Include="Resources\Contact.cs" />
+    <Compile Include="Resources\Transfers.cs" />
+    <Compile Include="Resources\Users.cs" />
+    <Compile Include="Resources\Wrappers\ContactInfo.cs" />
+    <Compile Include="Resources\Contacts.cs" />
+    <Compile Include="Resources\Orders.cs" />
+    <Compile Include="Resources\Wrappers\TransferInfo.cs" />
+    <Compile Include="Resources\Wrappers\UserInfo.cs" />
+    <Compile Include="Resources\Wrappers\OrderInfo.cs" />
+    <Compile Include="Resources\Currency.cs" />
+    <Compile Include="Resources\Order.cs" />
+    <Compile Include="Resources\OrderTransaction.cs" />
+    <Compile Include="Resources\ReceiveAddress.cs" />
+    <Compile Include="Resources\Transaction.cs" />
+    <Compile Include="Resources\Wrappers\TransactionInfo.cs" />
+    <Compile Include="Resources\Transactions.cs" />
+    <Compile Include="Resources\Transfer.cs" />
+    <Compile Include="Resources\User.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

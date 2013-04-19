@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinbaseSharpApp", "CoinbaseSharpApp\CoinbaseSharpApp.csproj", "{2DA26B39-0153-452E-9758-90CA54C1154E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinbaseSharp", "CoinbaseSharp\CoinbaseSharp.csproj", "{054096EE-63C1-4CA8-8DCF-FE5CA986FFC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DA26B39-0153-452E-9758-90CA54C1154E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA26B39-0153-452E-9758-90CA54C1154E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA26B39-0153-452E-9758-90CA54C1154E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA26B39-0153-452E-9758-90CA54C1154E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054096EE-63C1-4CA8-8DCF-FE5CA986FFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054096EE-63C1-4CA8-8DCF-FE5CA986FFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054096EE-63C1-4CA8-8DCF-FE5CA986FFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054096EE-63C1-4CA8-8DCF-FE5CA986FFC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
