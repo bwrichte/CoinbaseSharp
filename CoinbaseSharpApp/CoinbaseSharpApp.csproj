@@ -50,14 +50,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="EmailAddresses\StarterEmails.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Emails\StarterEmail.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\CoinbaseSharp\CoinbaseSharp.csproj">
       <Project>{054096ee-63c1-4ca8-8dcf-fe5ca986ffc0}</Project>
       <Name>CoinbaseSharp</Name>
